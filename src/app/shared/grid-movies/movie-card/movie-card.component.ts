@@ -1,11 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { TruncatePipe } from '../../../pipes/truncate.pipe';
+import { GenreNamePipe } from '../../../pipes/genre-name.pipe';
 
 @Component({
   selector: 'movie-card',
   standalone: true,
-  imports: [RouterLink, TruncatePipe],
+  imports: [RouterLink, TruncatePipe, GenreNamePipe],
   templateUrl: './movie-card.component.html',
   styleUrl: './movie-card.component.scss'
 })

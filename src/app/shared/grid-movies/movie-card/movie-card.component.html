@@ -3,7 +3,7 @@
         <img [src]="tmdbBaseUrl + posterPath" [alt]="originalTitle">
     </div>
     <h4 class="card-title">{{title}}</h4>
-    <div class="card-category">{{genre_ids}}</div>
+    <div class="card-category">{{genre_ids | genreName}}</div>
     <p class="card-desc">{{sypnosis | truncate: 100}}</p>
     <div class="card-details">
         <span class="details-like">

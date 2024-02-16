@@ -19,7 +19,7 @@
                 </span>
             </div>
             <div class="movie-category">
-                {{movie?.genre_ids}}
+                {{movie?.genre_ids | genreName}}
             </div>
             <p class="movie-sypnosis">
                 {{movie?.overview}}
