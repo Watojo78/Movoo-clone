@@ -30,12 +30,17 @@ export const routes: Routes = [
             {
                 path: 'genres',
                 component: GenresComponent,
-            }
+            },
+            {
+                path: '**',
+                redirectTo: '/now-playing',
+                pathMatch: 'full'
+            },
         ] 
     },
     {
         path: '',
-        redirectTo: '/movies',
+        redirectTo: '/movies/now-playing',
         pathMatch: 'full'
     },
 ];
