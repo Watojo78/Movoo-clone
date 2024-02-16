@@ -1,0 +1,60 @@
+.card{
+    display: flex;
+    row-gap: .56rem;
+    height: 28rem;
+    flex-direction: column;
+    padding: .7rem;
+    color: rgba(255, 255, 255, 0.822);
+    border-radius: 14px;
+    transition: .2s ease;
+
+    &:hover{
+        cursor: pointer;
+        box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px !important;
+    }
+
+    &-cover{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        height: 18rem;
+        background-color: gold;
+        overflow: hidden;
+    
+        img{
+            width: 100%;
+            background-size: cover;
+        }
+    }
+
+    &-category{
+        font-size: 11px;
+        font-weight: 300;
+        max-width: 14rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &-desc{
+        font-size: 12px;
+        line-height: 16px;
+        padding: .7rem 0;
+    }
+
+    &-details{
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.details{
+    &-like,&-rating,&-date{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

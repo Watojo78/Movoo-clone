@@ -1,0 +1,27 @@
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .56rem;
+    color: white;
+    padding: .24rem 1rem;
+}
+
+input{
+    width: 100%;
+    border: none;
+    color: white;
+    padding: .28rem 0;
+    background-color: rgb(13, 13, 15);
+    transition: .2s ease;
+    outline: none;
+    border-bottom: 1.4px solid rgba(255, 255, 255, 0);
+
+    &:focus{
+        border-bottom: 1.4px solid white;
+    }
+}
+
+.fi{
+    font-size: 13px;
+}

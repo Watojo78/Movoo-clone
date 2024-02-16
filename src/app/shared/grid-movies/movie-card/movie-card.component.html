@@ -1,0 +1,19 @@
+<a [routerLink]="'/movie/'+ routeName +'/'+ id" class="card">
+    <div class="card-cover">
+        <img [src]="tmdbBaseUrl + posterPath" [alt]="originalTitle">
+    </div>
+    <h4 class="card-title">{{title}}</h4>
+    <div class="card-category">{{genre_ids}}</div>
+    <p class="card-desc">{{sypnosis | truncate: 100}}</p>
+    <div class="card-details">
+        <span class="details-like">
+            <i class="fi fi-sr-heart"></i>&ensp;{{voteCount}}
+        </span>
+        <span class="details-rating">
+            <i class="fi fi-sr-star"></i>&ensp;{{voteAverage}}
+        </span>
+        <span class="details-date">
+            <i class="fi fi-sr-clock-seven"></i>&ensp;{{releaseDate}}
+        </span>
+    </div>
+</a>

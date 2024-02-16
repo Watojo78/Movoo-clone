@@ -1,0 +1,71 @@
+.hero{
+    display: flex;
+    height: 32.8rem;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    font-size: 14px;
+    img{
+        width: 100%;
+        background-size: cover;
+        opacity: .56;
+    }
+
+    &-content{
+        top: 4.9rem;
+        left: 2rem;
+        right: 2rem;
+        bottom: 2rem;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &-movie{
+        row-gap: .42rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.movie-sypnosis{
+    font-size: 13px;
+    width: 70%;
+    padding: .7rem 0;
+    line-height: 20px;
+}
+
+.movie{
+    &-details{
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+        width: auto;
+    }
+}
+
+.details{
+    &-like, &-rating, &-date{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+a{
+    color: white;
+}
+
+.mat-mdc-raised-button{
+    width: max-content;
+    border-radius: 50px;
+    color: white !important;
+    font-size: 13px;
+    border: 1.26px solid white;
+    background-color: transparent !important;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+}

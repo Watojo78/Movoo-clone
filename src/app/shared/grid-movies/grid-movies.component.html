@@ -1,0 +1,18 @@
+<hero-banner [movie]="heroMovie"></hero-banner>
+<div class="grid">
+    <div class="card" *ngFor="let movie of movies">
+        <movie-card 
+            [title]="movie.title"
+            [id]="movie.id"
+            [originalTitle]="movie.original_title"
+            [sypnosis]="movie.overview"
+            [genre_ids]="movie.genre_ids"
+            [voteAverage]="movie.vote_average"
+            [voteCount]="movie.vote_count"
+            [popularity]="movie.popularity"
+            [releaseDate]="movie.release_date"
+            [posterPath]="movie.poster_path"
+            [backdropPath]="movie.backdrop_path">
+        </movie-card>
+    </div>
+</div>

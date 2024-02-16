@@ -1,0 +1,30 @@
+<div class="hero">
+    <img [src]="tmdbBaseUrl + movie?.backdrop_path" [alt]="movie?.original_title">
+    <div class="hero-content">
+        <div class="nav">
+            <a routerLink="/movies/now-playing">Movies/ </a>
+            <a [routerLink]="'/movies/'+routeName">{{routeName}}</a>
+        </div>
+        <div class="hero-movie">
+            <h3 class="movie-title">{{movie?.title}}</h3>
+            <div class="movie-details">
+                <span class="details-like">
+                    <i class="fi fi-sr-heart"></i>&ensp;{{movie?.vote_count}}
+                </span>
+                <span class="details-rating">
+                    <i class="fi fi-sr-star"></i>&ensp;{{movie?.vote_average}}
+                </span>
+                <span class="details-date">
+                    <i class="fi fi-sr-clock-seven"></i>&ensp;{{movie?.release_date}}
+                </span>
+            </div>
+            <div class="movie-category">
+                {{movie?.genre_ids}}
+            </div>
+            <p class="movie-sypnosis">
+                {{movie?.overview}}
+            </p>
+            <button [routerLink]="'/movies/'+ routeName + movie?.id" routerLinkActive="router-link-active"  mat-raised-button>View more</button>
+        </div>
+    </div>
+</div>
